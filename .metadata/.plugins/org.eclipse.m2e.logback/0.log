@@ -709,3 +709,15 @@
 2023-04-23 18:07:51,334 [Worker-31: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.2.RELEASE\SpringBoot3-Advanced\Todolist8\src\test\resources
 2023-04-23 18:08:15,928 [Worker-31: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2023-04-23 18:08:15,929 [Worker-31: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-04-23 18:08:15,933 [Worker-31: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.2.RELEASE\SpringBoot3-Advanced\Todolist8\src\test\resources
+2023-04-23 18:12:09,145 [Worker-41: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-04-23 18:12:09,155 [Worker-41: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2023-04-23 18:12:09,166 [Worker-41: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.2.RELEASE\SpringBoot3-Advanced\Todolist7x\src\test\resources
+2023-04-23 18:12:09,434 [Worker-41: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-04-23 18:12:09,446 [Worker-41: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2023-04-23 18:12:09,460 [Worker-41: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.2.RELEASE\SpringBoot3-Advanced\Todolist8\src\test\resources
+2023-04-23 18:12:43,171 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-04-23 18:13:03,949 [Worker-8: Maven プロジェクトのインポート中] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Todolist7:0.0.1-SNAPSHOT @ C:\sts-4.17.2.RELEASE\SpringBoot3-Advanced\Todolist7\pom.xml.
+2023-04-23 18:13:05,063 [Worker-8: Maven プロジェクトのインポート中] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Todolist7/src/main/java
+2023-04-23 18:13:05,064 [Worker-8: Maven プロジェクトのインポート中] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Todolist7/src/main/resources
+2023-04-23 18:13:05,065 [Worker-8: Maven プロジェクトのインポート中] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Todolist7/src/main/resources

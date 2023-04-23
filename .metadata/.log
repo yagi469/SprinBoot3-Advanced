@@ -1975,3 +1975,41 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-04-23 17:16:05.739
 !MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-04-23 18:12:08.955
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-04-23 18:12:09.127
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-04-23 18:12:09.307
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-04-23 18:12:09.420
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
+!SESSION 2023-04-23 18:12:32.673 -----------------------------------------------
+eclipse.buildId=4.17.2.202301310704
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2023-04-23 18:12:33.892
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-04-23 18:12:39.395
+!MESSAGE Logback config file: C:\sts-4.17.2.RELEASE\SpringBoot3-Advanced\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.0.20221015-0744.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-04-23 18:12:43.236
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-04-23 18:13:06.437
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-04-23 18:13:06.854
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
