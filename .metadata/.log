@@ -1928,3 +1928,50 @@ org.eclipse.jface.text.BadLocationException
 
 !ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-04-23 17:08:25.771
 !MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
+!SESSION 2023-04-23 17:11:25.001 -----------------------------------------------
+eclipse.buildId=4.17.2.202301310704
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2023-04-23 17:11:26.890
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-04-23 17:11:33.841
+!MESSAGE Logback config file: C:\sts-4.17.2.RELEASE\SpringBoot3-Advanced\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.0.20221015-0744.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-04-23 17:11:37.365
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 2 2023-04-23 17:12:13.118
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-04-23 17:12:29.345
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/updates/release/latest, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2023-04-23 17:12:31.764
+!MESSAGE Using unsafe http transport to retrieve http://download.eclipse.org/usssdk/drops/release/1.2.2/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-04-23 17:15:35.148
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-04-23 17:15:35.352
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-04-23 17:15:38.211
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-04-23 17:15:38.510
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-04-23 17:16:05.708
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-04-23 17:16:05.739
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
