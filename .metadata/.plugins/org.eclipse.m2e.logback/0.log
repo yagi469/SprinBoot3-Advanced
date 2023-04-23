@@ -721,3 +721,45 @@
 2023-04-23 18:13:05,063 [Worker-8: Maven プロジェクトのインポート中] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Todolist7/src/main/java
 2023-04-23 18:13:05,064 [Worker-8: Maven プロジェクトのインポート中] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Todolist7/src/main/resources
 2023-04-23 18:13:05,065 [Worker-8: Maven プロジェクトのインポート中] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Todolist7/src/main/resources
+2023-04-23 18:13:05,066 [Worker-8: Maven プロジェクトのインポート中] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Todolist7/src/test/java
+2023-04-23 18:13:05,404 [Worker-8: Maven プロジェクトのインポート中] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 2 sec
+2023-04-23 18:17:55,997 [Worker-3: ビルド] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Todolist8:0.0.1-SNAPSHOT @ C:\sts-4.17.2.RELEASE\SpringBoot3-Advanced\Todolist8a\pom.xml.
+2023-04-23 18:17:56,586 [Worker-3: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-04-23 18:17:56,608 [Worker-3: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2023-04-23 18:17:56,625 [Worker-3: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.2.RELEASE\SpringBoot3-Advanced\Todolist8a\src\test\resources
+2023-04-23 18:17:58,234 [Worker-11: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-04-23 18:17:58,238 [Worker-11: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2023-04-23 18:17:58,261 [Worker-11: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.2.RELEASE\SpringBoot3-Advanced\Todolist8a\src\test\resources
+2023-04-23 18:18:19,025 [Worker-3: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-04-23 18:18:19,033 [Worker-3: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources from src\main\resources to target\classes
+2023-04-23 18:18:19,039 [Worker-3: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.2.RELEASE\SpringBoot3-Advanced\Todolist8a\src\test\resources
+2023-04-23 18:18:43,870 [Worker-3: ビルド] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:Todolist8a:0.0.1-SNAPSHOT @ C:\sts-4.17.2.RELEASE\SpringBoot3-Advanced\Todolist8a\pom.xml.
+2023-04-23 18:18:44,145 [Worker-3: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-04-23 18:18:44,146 [Worker-3: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-04-23 18:18:44,150 [Worker-3: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.2.RELEASE\SpringBoot3-Advanced\Todolist8a\src\test\resources
+2023-04-23 18:20:27,293 [Worker-5: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-04-23 18:20:27,294 [Worker-5: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-04-23 18:20:27,305 [Worker-5: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.2.RELEASE\SpringBoot3-Advanced\Todolist8a\src\test\resources
+2023-04-23 18:20:48,051 [Worker-11: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-04-23 18:20:48,052 [Worker-11: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-04-23 18:20:48,054 [Worker-11: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.2.RELEASE\SpringBoot3-Advanced\Todolist8a\src\test\resources
+2023-04-23 18:21:01,567 [Worker-12: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-04-23 18:21:01,567 [Worker-12: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-04-23 18:21:01,572 [Worker-12: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.2.RELEASE\SpringBoot3-Advanced\Todolist8a\src\test\resources
+2023-04-23 18:22:23,992 [Worker-13: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-04-23 18:22:23,993 [Worker-13: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-04-23 18:22:23,998 [Worker-13: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.2.RELEASE\SpringBoot3-Advanced\Todolist8a\src\test\resources
+2023-04-23 18:22:53,929 [Worker-17: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-04-23 18:22:53,930 [Worker-17: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-04-23 18:22:53,934 [Worker-17: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.2.RELEASE\SpringBoot3-Advanced\Todolist8a\src\test\resources
+2023-04-23 18:24:15,101 [Worker-13: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-04-23 18:24:15,102 [Worker-13: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-04-23 18:24:15,107 [Worker-13: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.2.RELEASE\SpringBoot3-Advanced\Todolist8a\src\test\resources
+2023-04-23 18:25:48,921 [Worker-18: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-04-23 18:25:48,958 [Worker-18: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 8 resources from src\main\resources to target\classes
+2023-04-23 18:25:48,968 [Worker-18: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.2.RELEASE\SpringBoot3-Advanced\Todolist8a\src\test\resources
+2023-04-23 18:26:22,783 [Worker-15: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-04-23 18:26:22,788 [Worker-15: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-04-23 18:26:22,791 [Worker-15: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sts-4.17.2.RELEASE\SpringBoot3-Advanced\Todolist8a\src\test\resources
+2023-04-23 18:29:53,179 [Worker-15: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-04-23 18:29:53,179 [Worker-15: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes

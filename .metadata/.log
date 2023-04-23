@@ -2013,3 +2013,44 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-04-23 18:13:06.854
 !MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
+
+!ENTRY org.eclipse.ui 2 2 2023-04-23 18:17:39.213
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-04-23 18:17:55.498
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-04-23 18:17:55.610
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-04-23 18:17:57.979
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-04-23 18:17:58.210
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-04-23 18:18:18.950
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-04-23 18:18:19.006
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
+
+!ENTRY org.eclipse.jface.text 4 0 2023-04-23 18:18:47.246
+!MESSAGE java.lang.NullPointerException: Cannot invoke "java.util.concurrent.CompletionStage.toCompletableFuture()" because the return value of "java.util.function.Function.apply(Object)" is null
+!STACK 0
+java.util.concurrent.CompletionException: java.lang.NullPointerException: Cannot invoke "java.util.concurrent.CompletionStage.toCompletableFuture()" because the return value of "java.util.function.Function.apply(Object)" is null
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1159)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.concurrent.CompletionStage.toCompletableFuture()" because the return value of "java.util.function.Function.apply(Object)" is null
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+	... 6 more
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-04-23 18:25:48.860
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
