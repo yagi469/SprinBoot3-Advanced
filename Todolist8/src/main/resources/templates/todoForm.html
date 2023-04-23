@@ -32,9 +32,9 @@
         <th th:text="#{label.importance}"></th>
         <td>
           <input type="radio" value="1" th:field="*{importance}">
-          <span th:text="{radio.high}"></span>
+          <span th:text="#{radio.high}"></span>
           <input type="radio" value="0" th:field="*{importance}">
-          <span th:text="{radio.low}"></span>
+          <span th:text="#{radio.low}"></span>
           <div th:if="${#fields.hasErrors('importance')}" th:errors="*{importance}"
             th:errorclass="red"></div>
         </td>
