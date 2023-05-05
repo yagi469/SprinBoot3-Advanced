@@ -2208,3 +2208,45 @@ java.lang.UnsupportedOperationException: No language server has registered to ha
 
 !ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-05-05 15:18:53.345
 !MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-05-05 15:24:38.283
+!MESSAGE executing callback sts4.classpath.OrjGjcjP FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-05-05 15:24:38.284
+!MESSAGE No language server has registered to handle command 'sts4.classpath.OrjGjcjP'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.OrjGjcjP'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-05-05 15:24:38.584
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-05-05 15:24:38.644
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-05-05 15:24:39.891
+!MESSAGE executing callback sts4.classpath.OrjGjcjP FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-05-05 15:24:39.892
+!MESSAGE No language server has registered to handle command 'sts4.classpath.OrjGjcjP'
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.OrjGjcjP'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-05-05 15:24:40.951
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-05-05 15:24:41.073
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-05-05 15:25:07.463
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-05-05 15:25:07.485
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 6.1.5.Final
