@@ -5,6 +5,8 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.servlet.http.HttpSession;
 
+import java.util.Locale;
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
@@ -95,10 +97,12 @@ public class TodoListController {
 
     // ToDo追加処理
     @PostMapping("/todo/create/do")
-    public String createTodo(@ModelAttribute @Validated TodoData todoData, BindingResult result,
-                             Model model) {
+    public String createTodo(@ModelAttribute @Validated TodoData todoData, 
+    		BindingResult result,
+    		Model model,
+    		Locale locale) {
         // エラーチェック
-        boolean isValid = todoService.isValid(todoData, result, true);
+        boolean isValid = todoService.isValid(todoData, result, true, locale);
         if (!result.hasErrors() && isValid) {
             // エラーなし -> 追加
             Todo todo = todoData.toEntity();
@@ -114,10 +118,12 @@ public class TodoListController {
 
     // ToDo更新処理
     @PostMapping("/todo/update")
-    public String updateTodo(@ModelAttribute @Validated TodoData todoData, BindingResult result,
-                             Model model) {
+    public String updateTodo(@ModelAttribute @Validated TodoData todoData, 
+    		BindingResult result,
+            Model model,
+            Locale locale) {
         // エラーチェック
-        boolean isValid = todoService.isValid(todoData, result, false);
+        boolean isValid = todoService.isValid(todoData, result, false, locale);
         if (!result.hasErrors() && isValid) {
             // エラーなし -> 更新
             Todo todo = todoData.toEntity();
@@ -143,11 +149,11 @@ public class TodoListController {
     @PostMapping("/todo/query")
     public ModelAndView queryTodo(@ModelAttribute TodoQuery todoQuery, BindingResult result,
                                   @PageableDefault(page = 0, size = 5, sort = "id") Pageable pageable,
-                                  ModelAndView mv) {
+                                  ModelAndView mv, Locale locale) {
         mv.setViewName("todoList");
 
         Page<Todo> todoPage = null;
-        if (todoService.isValid(todoQuery, result)) {
+        if (todoService.isValid(todoQuery, result, locale)) {
             // エラーがなければ検索
             todoPage = todoDaoImpl.findByCriteria(todoQuery, pageable);
 
