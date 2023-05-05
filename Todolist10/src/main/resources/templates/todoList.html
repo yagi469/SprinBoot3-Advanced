@@ -88,7 +88,7 @@
       <!-- 緊急度 -->
       <td th:text="${todo.urgency == 1 ? '★★★':'★'}"></td>
       <!-- タスク数 -->
-      <td th:text="${#lists.size(todo.tasklist)}" style="text-align: center"></td> <!-- ② -->
+      <td th:text="${#lists.size(todo.taskList)}" style="text-align: center"></td> <!-- ② -->
       <!-- 期限 -->
       <td th:text="${todo.deadline}"></td>
       <!-- 完了 -->

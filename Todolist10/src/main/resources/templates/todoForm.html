@@ -10,7 +10,8 @@
   <div th:replace="~{fragments :: msg_area}"></div>
   <!-- 入力フォーム -->
   <form th:action="@{/}" method="post" th:object="${todoData}">
-    <!-- ToDO入力エリア -->
+  	■ ToDo
+    <!-- ToDo入力エリア -->
     <table>
       <!-- id -->
       <tr>
@@ -71,6 +72,30 @@
         </td>
       </tr>
     </table>
+    
+    <!-- 追加　ここから　↓↓↓ -->
+    <hr style="margin-top: 2em; margin-bottom: 1em;">
+    <!-- タスク一覧 -->
+    ■ Task
+    <div th:if="${#lists.size(todoData.taskList)} > 0"> <!-- ② -->
+    　　<table>
+        <tr>
+          <th>id</th>
+          <th th:text="#{label.title}"></th>
+          <th th:text="#{label.deadline}"></th>
+          <th th:text="#{label.check}"></th>
+        </tr>
+        <!-- 登録済Task -->
+        <tr th:each="task:*{taskList}"> <!-- ③ -->
+          <td th:text="${task.id}"></td>
+          <td th:text="${task.title}"></td>
+          <td th:text="${task.deadline}"></td>
+          <td th:text="${task.done}"></td>
+        </tr>
+      </table>
+    </div>
+    <!-- 追加　ここまで　↑↑↑ -->
+    
     <!-- 更新時の操作ボタン -->
     <div th:if="${session.mode == 'update'}">
       <button type="submit" th:formaction="@{/todo/update}" th:text="#{button.update}"></button>
