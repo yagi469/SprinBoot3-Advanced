@@ -1,17 +1,24 @@
 package com.example.todolist.entity;
 
 import java.sql.Date;
+import java.util.List;
+
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.Data;
+import lombok.ToString;
 
 @Entity
 @Table(name = "todo")
 @Data
+// ③追加しないとtoString()で循環参照が起こりStackOverFlowを引き起こす
+@ToString(exclude="taskList")
 public class Todo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -32,4 +39,8 @@ public class Todo {
 
     @Column(name = "done")
     private String done;
+    
+    // taskListプロパティを追加
+    @OneToMany(mappedBy = "todo", cascade = CascadeType.ALL) // ①
+    private List<Task> taskList; // ②
 }
