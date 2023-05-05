@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.example.todolist.common.OpMsg;
 import com.example.todolist.dao.TodoDaoImpl;
@@ -103,6 +104,7 @@ public class TodoListController {
     public String createTodo(@ModelAttribute @Validated TodoData todoData, 
     		BindingResult result,
     		Model model,
+    		RedirectAttributes redirectAttributes,
     		Locale locale) {
         // エラーチェック
         boolean isValid = todoService.isValid(todoData, result, true, locale);
@@ -110,6 +112,10 @@ public class TodoListController {
             // エラーなし -> 追加
             Todo todo = todoData.toEntity();
             todoRepository.saveAndFlush(todo);
+            
+            // ⑤追加完了メッセージをセットしてリダイレクト
+            String msg = messageSource.getMessage("msg.i.todo_created", null, locale);
+            redirectAttributes.addFlashAttribute("msg", new OpMsg("I", msg));
             return "redirect:/todo";
 
         } else {
@@ -125,6 +131,7 @@ public class TodoListController {
     public String updateTodo(@ModelAttribute @Validated TodoData todoData, 
     		BindingResult result,
             Model model,
+            RedirectAttributes redirectAttributes,
             Locale locale) {
         // エラーチェック
         boolean isValid = todoService.isValid(todoData, result, false, locale);
@@ -132,20 +139,31 @@ public class TodoListController {
             // エラーなし -> 更新
             Todo todo = todoData.toEntity();
             todoRepository.saveAndFlush(todo);
+            
+            // ⑥更新完了メッセージをセットしてリダイレクト
+            String msg = messageSource.getMessage("msg.i.todo_updated", null, locale);
+            redirectAttributes.addFlashAttribute("msg", new OpMsg("I", msg));
             return "redirect:/todo";
 
         } else {
-            // エラーあり
-            // model.addAttribute("todoData", todoData);
+            // ④エラーあり -> エラーメッセージをセット
+            String msg = messageSource.getMessage("msg.e.input_something_wrong", null, locale);
+            model.addAttribute("msg", new OpMsg("E", msg));
             return "todoForm";
         }
     }
 
     // ToDo削除処理
     @PostMapping("/todo/delete")
-    public String deleteTodo(@ModelAttribute TodoData todoData) {
+    public String deleteTodo(@ModelAttribute TodoData todoData,
+    		RedirectAttributes redirectAttributes,
+    		Locale locale) {
         // 削除
         todoRepository.deleteById(todoData.getId());
+        
+        // ⑦削除完了メッセージをセットしてリダイレクト
+        String msg = messageSource.getMessage("msg.i.todo_deleted", null, locale);
+        redirectAttributes.addFlashAttribute("msg", new OpMsg("I", msg));
         return "redirect:/todo";
     }
 
@@ -166,9 +184,17 @@ public class TodoListController {
 
             mv.addObject("todoPage", todoPage);
             mv.addObject("todoList", todoPage.getContent());
-
+            
+            // ②該当なかったらメッセージを表示
+            if (todoPage.getContent().size() == 0) {
+            	String msg = messageSource.getMessage("msg.w.todo_not_found", null, locale);
+            	mv.addObject("msg", new OpMsg("W", msg));
+            }
         } else {
-            // 検索条件エラーあり
+            // ①検索条件エラーあり -> エラーメッセージをセット
+        	String msg = messageSource.getMessage("msg.e.input_something_wrong", null, locale);
+        	mv.addObject("msg", new OpMsg("E", msg));
+        	
             mv.addObject("todoPage", null);
             mv.addObject("todoList", null);
         }
