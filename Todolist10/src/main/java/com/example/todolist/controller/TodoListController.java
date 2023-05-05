@@ -5,6 +5,7 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.servlet.http.HttpSession;
 
+import java.util.List;
 import java.util.Locale;
 
 import org.springframework.context.MessageSource;
@@ -24,6 +25,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.example.todolist.common.OpMsg;
 import com.example.todolist.dao.TodoDaoImpl;
+import com.example.todolist.entity.Task;
 import com.example.todolist.entity.Todo;
 import com.example.todolist.form.TodoData;
 import com.example.todolist.form.TodoQuery;
@@ -76,6 +78,23 @@ public class TodoListController {
         mv.addObject("todoQuery", todoQuery); // 検索条件
         mv.addObject("todoPage", todoPage); // page情報
         mv.addObject("todoList", todoPage.getContent()); // 検索結果
+        
+        // ----- 追加　ここから　↓↓↓　-----
+        List<Todo> todoList = todoRepository.findAll();
+        List<Task> taskList;
+        for (Todo todo : todoList) {
+        	System.out.println(todo);
+        	taskList = todo.getTaskList();
+        	if (taskList.size() == 0) {
+        		System.out.println("\tTask not found.");
+        	}  else {
+        		for (Task task : taskList) {
+        			System.out.println("\t" + task);
+        		}
+        	}
+        }
+        
+        // ----- 追加　ここまで　↑↑↑　-----
 
         return mv;
     }

@@ -72,6 +72,7 @@
       <th th:text="#{label.title}"></th>
       <th th:text="#{label.importance}"></th>
       <th th:text="#{label.urgency}"></th>
+      <th th:text="#{label.task}"></th> <!-- ① -->
       <th th:text="#{label.deadline}"></th>
       <th th:text="#{label.check}"></th>
     </tr>
@@ -86,6 +87,8 @@
       <td th:text="${todo.importance == 1 ? '★★★':'★'}"></td>
       <!-- 緊急度 -->
       <td th:text="${todo.urgency == 1 ? '★★★':'★'}"></td>
+      <!-- タスク数 -->
+      <td th:text="${#lists.size(todo.tasklist)}" style="text-align: center"></td> <!-- ② -->
       <!-- 期限 -->
       <td th:text="${todo.deadline}"></td>
       <!-- 完了 -->
