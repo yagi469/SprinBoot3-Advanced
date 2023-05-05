@@ -6,25 +6,8 @@
 <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <!-- 操作メッセージエリア　ここから　↓↓↓ -->
-  <div th:if="${msg != null}"> <!-- ① -->
-  	<div th:if="${msg.msgType=='E'}"> <!-- ② -->
-  	  <div class="err_msg">
-  	  	<img th:src="@{/icons/error_icon.png}" class="va">&nbsp;<span class="va" th:text="${msg.msgText}"></span>
-  	  </div>
-	</div>
-	<div th:if="${msg.msgType=='W'}"> <!-- ③ -->
-	　　<div class="warn_msg">
-		<img th:src="@{/icons/warning_icon.png}" class="va">&nbsp;<span class="va" th:text="${msg.msgText}"></span>
-	  </div>
-	</div>
-	<div th:if="${msg.msgType=='I'}"> <!-- ④ -->
-	  <div class="info_msg">
-	  	<img th:src="@{/icons/info_icon.png}" class="va">&nbsp;<span class="va" th:text=${msg.msgText}></span>
-	  </div>
-	</div>
-  </div>
-  <!-- 操作メッセージエリア　ここまで　↑↑↑ -->
+  <!-- 操作メッセージエリア -->
+  <div th:replace="~{fragments :: msg_area}"></div>
   <!-- 入力フォーム -->
   <form th:action="@{/}" method="post" th:object="${todoData}">
     <!-- ToDO入力エリア -->
