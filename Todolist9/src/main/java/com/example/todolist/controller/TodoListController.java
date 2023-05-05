@@ -7,6 +7,7 @@ import jakarta.servlet.http.HttpSession;
 
 import java.util.Locale;
 
+import org.springframework.context.MessageSource;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
@@ -20,6 +21,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.example.todolist.common.OpMsg;
 import com.example.todolist.dao.TodoDaoImpl;
 import com.example.todolist.entity.Todo;
 import com.example.todolist.form.TodoData;
@@ -35,6 +37,7 @@ public class TodoListController {
     private final TodoRepository todoRepository;
     private final TodoService todoService;
     private final HttpSession session;
+    private final MessageSource messageSource; // 追加
 
     @PersistenceContext
     private EntityManager entityManager;
@@ -110,8 +113,9 @@ public class TodoListController {
             return "redirect:/todo";
 
         } else {
-            // エラーあり
-            // model.addAttribute("todoData", todoData);
+            // ①エラーあり -> エラーメッセージをセット
+            String msg = messageSource.getMessage("msg.e.input_something_wrong", null, locale);
+            model.addAttribute("msg", new OpMsg("E", msg));
             return "todoForm";
         }
     }
